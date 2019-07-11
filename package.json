@@ -1,0 +1,23 @@
+{
+  "name": "csv-parser2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petreleon/CSV-parser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petreleon/CSV-parser/issues"
+  },
+  "homepage": "https://github.com/petreleon/CSV-parser#readme",
+  "description": "",
+  "dependencies": {
+    "csv-parser": "^2.3.0",
+    "mongodb": "^3.2.7"
+  }
+}
