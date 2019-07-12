@@ -24,7 +24,12 @@ mdbclient.connect(url, {
         conn.close();
         return console.error(err);
       }
-      col.createIndex({ Title: 1, Creator: 1, Publisher: 1 })
+      col.createIndex({ "$**": "text"});
+      
+      col.createIndex({ Title: 1});
+      col.createIndex({ Creator: 1});
+      col.createIndex({ Publisher: 1 });
+      
       let stream = fs.createReadStream('./checkouts-by-title.csv')
         .pipe(csv())
         .on('data', (data) => {
