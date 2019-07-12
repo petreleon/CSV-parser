@@ -20,6 +20,7 @@ mdbclient.connect(url, {
         conn.close();
         return console.error(err);
       }
+      col.createIndex({ "$**": "text"});
       col.createIndex({ Title: "text" });
       col.createIndex({ Creator: 1 });
       col.createIndex({ Publisher: 1 });
